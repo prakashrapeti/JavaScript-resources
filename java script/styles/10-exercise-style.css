@@ -1,0 +1,55 @@
+.button{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border: none;
+    background-color: rgb(255, 216, 20);
+    border-radius: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    margin-right: 10px;
+    }
+.uber{
+    color: white;
+    background-color:black;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.schedule{
+    color: black;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 230);
+
+}
+.toggled{
+    color: white;
+    background-color:black;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 20px;
+
+}
+.is-toggled{
+    background-color: rgb(230, 230, 230);
+    color: black;
+}

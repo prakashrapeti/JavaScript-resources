@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myArray = [1, 3, 4];
+        console.log(myArray)
+
+        console.log(myArray[2]);
+
+        // [1, 'hello', true, {name : socks}, [1,2]];
+
+        console.log(typeof [1,2]);
+
+        // properties of array
+
+        console.log(myArray.length);
+
+        myArray.push(100);
+        console.log(myArray)
+
+        myArray.splice(0,1);
+        console.log(myArray)
+
+        //loops
+        let i = 1;
+        while(i<=5){
+            console.log(i);
+            i++;
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            console.log(i);
+
+        }
+
+      
+        const todolist = [
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ];
+
+        for (let index = 0; index < todolist.length; index++ ){
+            const value  = todolist[index];
+            console.log(value)
+
+        }
+
+        const num = [1,2,3];
+        let result = 0;
+
+        for (let i=0; i<num.length; i++){
+            const nums = num[i]
+            result += nums;
+        }
+        console.log(result);
+
+        // let result2 = 0;
+        let array = [];
+        for (j = 0; j<num.length; j++){
+            const num2 = num[j] * 2;
+            array.push(num2);
+
+        }
+        console.log(array);
+        const array1 = [1,2,3]
+    const arraay2 = array1.slice();
+    arraay2.push(4);
+    console.log(arraay2)
+    console.log(array1)
+
+    const [firstValue,secondValue] = [1,2,3]
+  
+    for(let i = 1; i <= 10; i++){
+       
+        if(i%3 === 0){
+            continue;
+        }
+        console.log(i);
+
+        if(i===10){
+            break;
+        }
+     
+    }
+
+    let i = 1;
+    while(i <= 10){
+        if(i % 3 === 0){
+            i++;
+            continue;
+        }
+        console.log(i);
+        i++;
+    }
+
+    
+
+
+    </script>
+</body>
+</html>

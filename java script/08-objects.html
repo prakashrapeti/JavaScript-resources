@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objectss</title>
+</head>
+<body>
+    <script>
+      const product = {
+            name : 'drink',
+            cost : 50
+        }
+        console.log(product);
+        console.log(product.name);
+        product.name = 'cool drink'
+        console.log(product.name);
+        const product2 = {
+            name : 'shirt',
+            'delivert-time'  : '1 day',
+            rating : {
+                stars : 5,
+                count : 89
+            },
+            fun : function function1(){
+                console.log('function inside the function');
+            }
+           
+        }
+        console.log(product2.name);
+    console.log(product2['delivert-time']);
+    console.log(product2.rating.count);
+    console.log(product2);
+    product2.fun();
+     console.log(typeof console);
+     console.log(typeof console.log);
+    console.log( JSON.stringify(product2));
+    const jsonString = JSON.stringify(product2);
+    console.log(JSON.parse(jsonString));
+    const object1 = {
+        messege : 'hello'
+    };
+   const object2 = object1;
+  
+    object1.messege = 'good job';
+    console.log(object1);
+    console.log(object2);
+    const object3 = {
+        messege : 'good job'
+
+        
+    }
+    console.log(object1 === object2);
+    console.log(object3 === object2);
+
+    const object4 = {
+        messege : 'good  morning',
+        price : 799
+    };
+   // const messeges  = object4.messege;
+    //if the variable name and property name is same we have shortcut
+    const {messege, price} = object4;
+    console.log(messege);
+    console.log(price);
+     
+
+    const  object5 = {
+       // messege :messege
+        //we have a shortcut shorthand property
+        messege,
+        // method : function function1(){
+        //     console.log('method')
+        // }
+        method(){
+            console.log('method')
+        }
+    }
+    console.log(object5.messege )
+    object5.method();
+
+
+   
+
+    </script>
+</body>
+</html>

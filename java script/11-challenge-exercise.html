@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       
+        function strings(string,word){
+           
+
+            // Set the index to -1 at the start (so we'll assume
+            // the string 'search' doesn't exist in the array).
+            // If we find the string 'search' in the array, we
+            // will update the index.
+            let index = -1;
+
+            for (let i = 0; i < string.length; i++) {
+            if (string[i] === word) {
+                index = i;
+                break;
+            }
+            }
+
+            console.log(index);
+                }
+
+   strings(['hi','hello','search','search'],'search');
+   strings(['hi','hello','search','hi','hi'],'fgll')
+
+
+
+   function removeEgg(foods){
+    let result = [];
+    for (let index = 0; index < foods.length; index++) {
+        const element = foods[index];
+        if(element === 'egg'){
+            continue;
+        }
+        result.push(foods[index])
+
+        
+    }
+    return result;
+   }
+
+   console.log(removeEgg(['egg','rice','egg','water','egg','drink']));
+    </script>
+</body>
+</html>
